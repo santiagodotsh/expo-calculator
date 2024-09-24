@@ -1,16 +1,17 @@
-import { Text, View } from 'react-native'
+import { View } from 'react-native'
+import { CustomText } from '@/components/custom-text'
 import { styles } from '@/styles/global'
 
 export default function HomeScreen() {
   return (
     <View style={styles.calculatorContainer}>
-      <Text style={styles.mainResult}>
+      <CustomText variant='main'>
         50 x 50
-      </Text>
+      </CustomText>
 
-      <Text style={styles.subResult}>
+      <CustomText variant='sub'>
         2500
-      </Text>
+      </CustomText>
     </View>
   )
 }
