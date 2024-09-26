@@ -30,7 +30,7 @@ export default function HomeScreen() {
           blackText
         />
         <CalculatorButton
-          label='+/-'
+          label='+|-'
           color={Colors.lightGray}
           onPress={() => console.log('+/-')}
           blackText
@@ -45,6 +45,53 @@ export default function HomeScreen() {
           label='/'
           color={Colors.orange}
           onPress={() => console.log('/')}
+        />
+      </View>
+
+      <View style={styles.row}>
+        <CalculatorButton label='7' onPress={() => console.log('7')} />
+        <CalculatorButton label='8' onPress={() => console.log('8')} />
+        <CalculatorButton label='9' onPress={() => console.log('9')} />
+        <CalculatorButton
+          label='*'
+          color={Colors.orange}
+          onPress={() => console.log('*')}
+        />
+      </View>
+
+      <View style={styles.row}>
+        <CalculatorButton label='4' onPress={() => console.log('7')} />
+        <CalculatorButton label='5' onPress={() => console.log('8')} />
+        <CalculatorButton label='6' onPress={() => console.log('9')} />
+        <CalculatorButton
+          label='-'
+          color={Colors.orange}
+          onPress={() => console.log('*')}
+        />
+      </View>
+
+      <View style={styles.row}>
+        <CalculatorButton label='1' onPress={() => console.log('7')} />
+        <CalculatorButton label='2' onPress={() => console.log('8')} />
+        <CalculatorButton label='3' onPress={() => console.log('9')} />
+        <CalculatorButton
+          label='+'
+          color={Colors.orange}
+          onPress={() => console.log('*')}
+        />
+      </View>
+
+      <View style={styles.row}>
+        <CalculatorButton
+          label='0'
+          onPress={() => console.log('7')}
+          doubleSize
+        />
+        <CalculatorButton label='.' onPress={() => console.log('8')} />
+        <CalculatorButton
+          label='='
+          color={Colors.orange}
+          onPress={() => console.log('*')}
         />
       </View>
     </View>
